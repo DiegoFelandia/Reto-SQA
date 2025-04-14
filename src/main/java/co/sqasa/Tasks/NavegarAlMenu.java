@@ -1,3 +1,5 @@
+package co.sqasa.Tasks
+
 public class NavegarAlMenu implements Task {
 
     private final String opcionMenu;
