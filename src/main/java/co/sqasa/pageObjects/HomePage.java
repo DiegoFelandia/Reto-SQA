@@ -1,4 +1,4 @@
-package co.sqa.sanangel.userinterfaces;
+package co.sqasa.pageObjects;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
