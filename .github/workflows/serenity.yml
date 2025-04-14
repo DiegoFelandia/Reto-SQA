@@ -1,0 +1,33 @@
+name: SerenityBDD CI
+
+on:
+  workflow_dispatch:  # Permite ejecutar manualmente desde GitHub
+
+jobs:
+  run-serenity:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Java 11
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - name: Configurar Chrome para pruebas headless
+        run: |
+          sudo apt update
+          sudo apt install -y google-chrome-stable
+          echo "CHROME_BIN=/usr/bin/google-chrome" >> $GITHUB_ENV
+
+      - name: Ejecutar pruebas Serenity
+        run: mvn clean verify -Dwebdriver.chrome.driver=/usr/bin/google-chrome -Dchrome.options="--headless"
+
+      - name: Publicar reporte Serenity
+        uses: actions/upload-artifact@v3
+        with:
+          name: serenity-report
+          path: target/site/serenity
