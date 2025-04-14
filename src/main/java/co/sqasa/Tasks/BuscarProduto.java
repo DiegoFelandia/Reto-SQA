@@ -1,3 +1,5 @@
+package co.sqasa.Tasks
+
 public class BuscarProducto implements Task {
 
     private final String palabra;
