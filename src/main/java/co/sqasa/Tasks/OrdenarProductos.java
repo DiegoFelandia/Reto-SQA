@@ -1,3 +1,5 @@
+package co.sqasa.Tasks
+
 public class OrdenarProductos implements Task {
 
     private final String criterio;
