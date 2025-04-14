@@ -1,3 +1,5 @@
+package co.sqasa.Tasks
+
 public class SeleccionarFechaDeEnvio implements Task {
 
     private final String fecha;
