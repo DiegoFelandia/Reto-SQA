@@ -1,3 +1,5 @@
+package co.sqasa.tasks
+
 public class AgregarAdicion implements Task {
 
     private final String adicion;
