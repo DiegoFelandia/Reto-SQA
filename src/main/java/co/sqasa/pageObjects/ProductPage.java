@@ -1,4 +1,4 @@
-package co.sqa.sanangel.userinterfaces;
+package co.sqasa.pageObjects;
 
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
