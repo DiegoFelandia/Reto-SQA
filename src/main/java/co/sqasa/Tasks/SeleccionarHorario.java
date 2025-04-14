@@ -1,3 +1,5 @@
+package co.sqasa.Tasks
+
 public class SeleccionarFranjaHoraria implements Task {
 
     private final String franja;
