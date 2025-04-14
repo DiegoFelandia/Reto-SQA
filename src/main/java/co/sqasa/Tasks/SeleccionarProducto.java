@@ -1,3 +1,5 @@
+package co.sqasa.Tasks
+
 public class SeleccionarProducto implements Task {
 
     private final int cantidad;
