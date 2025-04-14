@@ -1,4 +1,4 @@
-package co.sqasa.tasks
+package co.sqasa.Tasks
 
 public class AgregarAdicion implements Task {
 
