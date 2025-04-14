@@ -1,4 +1,4 @@
-package co.sqasa.Tasks
+package co.sqasa.Tasks;
 
 public class BuscarProducto implements Task {
 
