@@ -1,4 +1,4 @@
-package co.sqa.sanangel.questions;
+package co.sqasa.Questions;
 
 import co.sqa.sanangel.userinterfaces.CarritoPage;
 import net.serenitybdd.screenplay.Actor;
